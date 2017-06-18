@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dxs-IN-EdS">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Digite um acorde-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Chords" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aXH-cq-eRQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="578.33333333333337"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVG-7R-lJn" customClass="ViewNote" customModule="Chords" customModuleProvider="target">
+                                        <rect key="frame" x="82.666666666666686" y="103.33333333333334" width="248.66666666666663" height="371.66666666666663"/>
+                                        <color key="backgroundColor" red="0.3411764706" green="0.23529411759999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="IVG-7R-lJn" secondAttribute="height" multiplier="2:3" id="Xki-9U-opd"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3C-Kw-TRu">
+                                        <rect key="frame" x="8" y="61.999999999999993" width="398" height="33.333333333333321"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="36"/>
+                                        <color key="textColor" red="0.3411764706" green="0.23529411759999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="IVG-7R-lJn" firstAttribute="centerY" secondItem="aXH-cq-eRQ" secondAttribute="centerY" id="00T-IS-GDv"/>
+                                    <constraint firstItem="b3C-Kw-TRu" firstAttribute="leading" secondItem="aXH-cq-eRQ" secondAttribute="leading" constant="8" id="FvS-rF-MLn"/>
+                                    <constraint firstItem="IVG-7R-lJn" firstAttribute="top" secondItem="b3C-Kw-TRu" secondAttribute="bottom" constant="8" id="G5p-Ty-cW1"/>
+                                    <constraint firstItem="IVG-7R-lJn" firstAttribute="centerX" secondItem="aXH-cq-eRQ" secondAttribute="centerX" id="PLT-PO-BbG"/>
+                                    <constraint firstAttribute="trailing" secondItem="b3C-Kw-TRu" secondAttribute="trailing" constant="8" id="pP4-MZ-c8r"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Digite um acorde" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TYO-rv-yM4">
+                                <rect key="frame" x="0.0" y="578.33333333333348" width="414" height="44.666666666666629"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.3411764706" green="0.23529411759999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.3411764706" green="0.23529411759999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="drz-1e-R2V"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TYO-rv-yM4" secondAttribute="trailing" id="3ti-bC-XRH"/>
+                            <constraint firstItem="TYO-rv-yM4" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/15" id="7VL-Fz-pFM"/>
+                            <constraint firstItem="TYO-rv-yM4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CEQ-c3-BQi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TYO-rv-yM4" secondAttribute="bottom" id="EvE-je-8Nt"/>
+                            <constraint firstItem="aXH-cq-eRQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IUc-p2-NCO"/>
+                            <constraint firstItem="TYO-rv-yM4" firstAttribute="top" secondItem="aXH-cq-eRQ" secondAttribute="bottom" id="Z4H-Ik-nOq"/>
+                            <constraint firstItem="b3C-Kw-TRu" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/20" id="ZQh-qu-T9k"/>
+                            <constraint firstItem="IVG-7R-lJn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="6/10" id="cYL-as-5uW"/>
+                            <constraint firstAttribute="trailing" secondItem="aXH-cq-eRQ" secondAttribute="trailing" id="i6K-8G-epe"/>
+                            <constraint firstItem="aXH-cq-eRQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wMb-rC-07r"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Digite um acorde" id="v4Z-8U-zqT"/>
+                    <connections>
+                        <outlet property="labelChord" destination="b3C-Kw-TRu" id="w6H-qO-95p"/>
+                        <outlet property="textFieldChord" destination="TYO-rv-yM4" id="1n2-EW-5Ut"/>
+                        <outlet property="verticalSpaceTextField" destination="EvE-je-8Nt" id="NXE-6T-bxY"/>
+                        <outlet property="viewChord" destination="aXH-cq-eRQ" id="TCE-1N-Nzu"/>
+                        <outlet property="viewNote" destination="IVG-7R-lJn" id="pEp-aw-kmo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1815.9420289855075" y="-426.35869565217394"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mBK-37-47X">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="dxs-IN-EdS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="e6a-MG-L8J">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.3411764706" green="0.23529411759999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="28p-3k-ykT" kind="relationship" relationship="viewControllers" id="X0y-EY-jDt"/>
+                        <segue destination="hT1-3b-s2n" kind="relationship" relationship="viewControllers" id="xEA-jF-wZH"/>
+                        <segue destination="Ptp-Bu-WTb" kind="relationship" relationship="viewControllers" id="K5T-9x-tiL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TjC-XG-pfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.13043478260872" y="138.58695652173915"/>
+        </scene>
+        <!--Texto-->
+        <scene sceneID="ikc-R0-y21">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="F4f-t7-j5t" customClass="TextViewController" customModule="Chords" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oBn-XB-8RS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pb1-Zg-itz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U86-yR-qeH">
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ds-8n-XNU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="578.33333333333337"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">F7M                                       G7(13)
+Olha que coisa mais linda mais cheia de graça
+                            Gm7
+É ela menina que vem e que passa
+            C7(9-)                Am7(11)   Ab7(11+)    Gm7(11)   Gb7(11+)
+Num doce balanço a caminho do mar
+
+
+ F7M                                G7(13)
+Moça do corpo dourado do sol de lpanema
+                                Gm7
+O seu balançado é mais que um poema
+                C7(9-)                F7M
+É a coisa mais linda que eu já vi passar
+
+Segunda Parte:
+
+F#7M                     B7(9)
+Ah, por que estou tão sozinho?
+F#m7                          D7(9)
+     Ah, por que tudo é tão triste?
+Gm7                     Eb7(9)
+     Ah, a beleza que existe
+     Am7               D7(9-)
+A beleza que não é só minha
+ Gm7                C7(9-)
+Que também passa sozinha
+
+F7M                                 G7(13)
+Ah, se ela soubesse que quando ela passa
+                               Gm7
+O mundo inteirinho se enche de graça
+             C7(9-)              F7M
+E fica mais lindo por causa do amor
+
+Final:
+
+C7(9-)            F7M
+   Por causa do amor
+C7(9-)            F7M
+   Por causa do amor.</mutableString>
+                                <color key="textColor" red="0.3411764706" green="0.23529411759999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="F4f-t7-j5t" id="Slh-yh-43O"/>
+                                </connections>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcA-AI-hsS">
+                                <rect key="frame" x="0.0" y="578.33333333333348" width="414" height="44.666666666666629"/>
+                                <color key="backgroundColor" red="0.3411764706" green="0.23529411759999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Extrair Acordes">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didExtractChords:" destination="F4f-t7-j5t" eventType="touchUpInside" id="d55-L1-HvP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KcA-AI-hsS" firstAttribute="top" secondItem="3Ds-8n-XNU" secondAttribute="bottom" id="6w3-XJ-Njv"/>
+                            <constraint firstItem="KcA-AI-hsS" firstAttribute="leading" secondItem="U86-yR-qeH" secondAttribute="leading" id="Awg-3L-reg"/>
+                            <constraint firstAttribute="trailing" secondItem="3Ds-8n-XNU" secondAttribute="trailing" id="DP2-hd-yHf"/>
+                            <constraint firstItem="3Ds-8n-XNU" firstAttribute="top" secondItem="oBn-XB-8RS" secondAttribute="bottom" id="Lck-2M-EjU"/>
+                            <constraint firstAttribute="trailing" secondItem="KcA-AI-hsS" secondAttribute="trailing" id="NBz-EB-opS"/>
+                            <constraint firstItem="KcA-AI-hsS" firstAttribute="height" secondItem="U86-yR-qeH" secondAttribute="height" multiplier="1/15" id="RXa-kO-K2P"/>
+                            <constraint firstItem="3Ds-8n-XNU" firstAttribute="leading" secondItem="U86-yR-qeH" secondAttribute="leading" id="TCg-El-Qzb"/>
+                            <constraint firstItem="Pb1-Zg-itz" firstAttribute="top" secondItem="KcA-AI-hsS" secondAttribute="bottom" id="zws-TI-dao"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Texto" id="KUk-Ps-YC1">
+                        <barButtonItem key="rightBarButtonItem" title="Extrair Acordes" id="FlT-aK-rIU">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="didExtractChords:" destination="F4f-t7-j5t" id="Adf-4Y-aWo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textView" destination="3Ds-8n-XNU" id="xiL-qh-QMf"/>
+                        <segue destination="aCq-b8-l3m" kind="presentation" identifier="showChordsIdentifier" id="0W1-rf-gwU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gGD-We-Nbr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1677" y="292"/>
+        </scene>
+        <!--Texto-->
+        <scene sceneID="DBg-HU-Isi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hT1-3b-s2n" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Texto" image="folded-paper_318-311121x" id="S8N-OE-fKH"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="8i2-9R-cbM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.3411764706" green="0.23529411759999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="F4f-t7-j5t" kind="relationship" relationship="rootViewController" id="Ogg-cF-bRl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nD1-YR-LH9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909" y="292"/>
+        </scene>
+        <!--Acordes-->
+        <scene sceneID="XbA-gQ-iqw">
+            <objects>
+                <viewController id="TZV-vh-2pd" customClass="NoteViewController" customModule="Chords" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AUx-9d-Nlx"/>
+                        <viewControllerLayoutGuide type="bottom" id="wcw-Gs-ec4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IGW-ja-hZl">
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Digite um acorde" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yl0-mH-2cP">
+                                <rect key="frame" x="0.0" y="578.33333333333348" width="414" height="44.666666666666629"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.3411764706" green="0.23529411759999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.3411764706" green="0.23529411759999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="TZV-vh-2pd" id="Z0O-VU-Eco"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cg7-Mh-A6f">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="578.33333333333337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kdt-JX-RhG">
+                                        <rect key="frame" x="102.33333333333334" y="271" width="209.66666666666666" height="37"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite um acorde" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aox-MU-QTe">
+                                                <rect key="frame" x="0.0" y="0.33333333333331439" width="209.66666666666669" height="37"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="27"/>
+                                                <color key="textColor" red="0.3411764706" green="0.23529411759999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acorde Válido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzh-6n-I0L">
+                                                <rect key="frame" x="0.0" y="37.333333333333314" width="209.66666666666669" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="27"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Aox-MU-QTe" firstAttribute="leading" secondItem="kdt-JX-RhG" secondAttribute="leading" id="Dbf-tt-YuU"/>
+                                            <constraint firstAttribute="trailing" secondItem="Aox-MU-QTe" secondAttribute="trailing" id="Ohf-up-QGT"/>
+                                            <constraint firstItem="Aox-MU-QTe" firstAttribute="top" secondItem="kdt-JX-RhG" secondAttribute="top" id="WwI-de-bBB"/>
+                                            <constraint firstAttribute="trailing" secondItem="xzh-6n-I0L" secondAttribute="trailing" id="aUm-Rc-7Ab"/>
+                                            <constraint firstItem="xzh-6n-I0L" firstAttribute="leading" secondItem="kdt-JX-RhG" secondAttribute="leading" id="es2-Rh-yGh"/>
+                                            <constraint firstAttribute="bottom" secondItem="xzh-6n-I0L" secondAttribute="bottom" id="zhh-gh-Z7Z"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="kdt-JX-RhG" firstAttribute="centerX" secondItem="Cg7-Mh-A6f" secondAttribute="centerX" id="GBB-9I-Jcj"/>
+                                    <constraint firstItem="kdt-JX-RhG" firstAttribute="centerY" secondItem="Cg7-Mh-A6f" secondAttribute="centerY" id="zvu-v2-cbP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cg7-Mh-A6f" firstAttribute="top" secondItem="AUx-9d-Nlx" secondAttribute="bottom" id="7TO-Qp-jiC"/>
+                            <constraint firstItem="Cg7-Mh-A6f" firstAttribute="leading" secondItem="IGW-ja-hZl" secondAttribute="leading" id="Ngy-IT-9G6"/>
+                            <constraint firstItem="yl0-mH-2cP" firstAttribute="leading" secondItem="IGW-ja-hZl" secondAttribute="leading" id="P0b-04-huy"/>
+                            <constraint firstItem="yl0-mH-2cP" firstAttribute="top" secondItem="Cg7-Mh-A6f" secondAttribute="bottom" id="P2i-dr-gAB"/>
+                            <constraint firstItem="yl0-mH-2cP" firstAttribute="height" secondItem="IGW-ja-hZl" secondAttribute="height" multiplier="1/15" id="T1Q-AZ-CyP"/>
+                            <constraint firstAttribute="trailing" secondItem="Cg7-Mh-A6f" secondAttribute="trailing" id="hdG-t9-AG3"/>
+                            <constraint firstItem="wcw-Gs-ec4" firstAttribute="top" secondItem="yl0-mH-2cP" secondAttribute="bottom" id="iya-SS-J25"/>
+                            <constraint firstAttribute="trailing" secondItem="yl0-mH-2cP" secondAttribute="trailing" id="neQ-is-pB8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Acordes" id="x4T-oX-bTa"/>
+                    <connections>
+                        <outlet property="labelNote" destination="Aox-MU-QTe" id="src-W6-bgW"/>
+                        <outlet property="labelValidChord" destination="xzh-6n-I0L" id="axI-kv-IiZ"/>
+                        <outlet property="textField" destination="yl0-mH-2cP" id="ILm-Nx-X9d"/>
+                        <outlet property="verticalSpaceTextField" destination="iya-SS-J25" id="eXj-08-x6d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHA-uY-7Oi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1815.9420289855075" y="1101.358695652174"/>
+        </scene>
+        <!--Acordes Identificados-->
+        <scene sceneID="dqi-gb-Bi0">
+            <objects>
+                <viewController storyboardIdentifier="IdentifiedChordsViewControllerID" id="JK8-0G-1gC" customClass="IdentifiedChordsViewController" customModule="Chords" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oXb-Se-R2a"/>
+                        <viewControllerLayoutGuide type="bottom" id="T30-7T-tSL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yIQ-FD-LlH">
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEI-uD-rRb">
+                                <rect key="frame" x="0.0" y="627.33333333333348" width="414" height="44.666666666666629"/>
+                                <color key="backgroundColor" red="0.3411764706" green="0.23529411759999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Fechar"/>
+                                <connections>
+                                    <action selector="didPressCloseButton:" destination="JK8-0G-1gC" eventType="touchUpInside" id="Jrr-Oz-YTX"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ihc-13-Zan">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="627.33333333333337"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="scrollIndicatorInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="4" minimumInteritemSpacing="4" id="9bM-Gb-3TR">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="4" minY="4" maxX="4" maxY="4"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Qv4-yK-8hl" customClass="IdentifiedChordsCollectionViewCell" customModule="Chords" customModuleProvider="target">
+                                        <rect key="frame" x="4" y="4" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="j8Z-VD-3PV">
+                                                    <rect key="frame" x="0.0" y="0.6666666666666643" width="100" height="100"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                    <color key="textColor" red="0.3411764706" green="0.23529411759999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="j8Z-VD-3PV" firstAttribute="centerY" secondItem="Qv4-yK-8hl" secondAttribute="centerY" id="K8T-JM-MH2"/>
+                                            <constraint firstItem="j8Z-VD-3PV" firstAttribute="width" secondItem="Qv4-yK-8hl" secondAttribute="width" id="Rs3-22-yr0"/>
+                                            <constraint firstItem="j8Z-VD-3PV" firstAttribute="centerX" secondItem="Qv4-yK-8hl" secondAttribute="centerX" id="X4r-eh-vbe"/>
+                                            <constraint firstItem="j8Z-VD-3PV" firstAttribute="height" secondItem="Qv4-yK-8hl" secondAttribute="height" id="b3g-ti-tkN"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="labelNote" destination="j8Z-VD-3PV" id="nks-bs-gcd"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="JK8-0G-1gC" id="vFx-QR-QEm"/>
+                                    <outlet property="delegate" destination="JK8-0G-1gC" id="BOh-Ui-QMh"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pEI-uD-rRb" firstAttribute="top" secondItem="ihc-13-Zan" secondAttribute="bottom" id="J56-r9-hcL"/>
+                            <constraint firstItem="pEI-uD-rRb" firstAttribute="leading" secondItem="yIQ-FD-LlH" secondAttribute="leading" id="Z3W-70-XPO"/>
+                            <constraint firstItem="ihc-13-Zan" firstAttribute="leading" secondItem="yIQ-FD-LlH" secondAttribute="leading" id="bFg-mM-KCK"/>
+                            <constraint firstItem="ihc-13-Zan" firstAttribute="top" secondItem="oXb-Se-R2a" secondAttribute="bottom" id="boa-lp-hIQ"/>
+                            <constraint firstAttribute="trailing" secondItem="ihc-13-Zan" secondAttribute="trailing" id="gbY-YD-94r"/>
+                            <constraint firstAttribute="trailing" secondItem="pEI-uD-rRb" secondAttribute="trailing" id="hBt-TK-pe3"/>
+                            <constraint firstItem="T30-7T-tSL" firstAttribute="top" secondItem="pEI-uD-rRb" secondAttribute="bottom" id="j2G-Pk-LvQ"/>
+                            <constraint firstItem="pEI-uD-rRb" firstAttribute="height" secondItem="yIQ-FD-LlH" secondAttribute="height" multiplier="1/15" id="qUK-0P-h3c"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Acordes Identificados" id="HHF-Pd-ECb">
+                        <barButtonItem key="rightBarButtonItem" title="Fechar" id="QRT-Mn-dyI">
+                            <connections>
+                                <action selector="didPressCloseButton:" destination="JK8-0G-1gC" id="uo0-VS-zmq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="ihc-13-Zan" id="n2G-3J-0VG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WOR-Jr-ZcB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3468.115942028986" y="291.84782608695656"/>
+        </scene>
+        <!--Acorde-->
+        <scene sceneID="T9a-F5-wSi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ptp-Bu-WTb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Acorde" image="note1x" id="8uF-nk-8dM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="A9p-5Q-TeK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.3411764706" green="0.23529411759999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JfC-mM-cGU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WSg-dO-faj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908.69565217391312" y="-426.35869565217394"/>
+        </scene>
+        <!--Nota-->
+        <scene sceneID="jUK-pm-Msi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="28p-3k-ykT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Nota" image="note-xxl1x" id="TzN-fM-hLf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Fnx-QA-6nb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.3411764706" green="0.23529411759999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TZV-vh-2pd" kind="relationship" relationship="rootViewController" id="QOk-9v-5ub"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VSK-va-5H4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908.69565217391312" y="1101.358695652174"/>
+        </scene>
+        <!--Identified Chords Navigation View Controller-->
+        <scene sceneID="iAS-JC-zIH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aCq-b8-l3m" customClass="IdentifiedChordsNavigationViewController" customModule="Chords" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="mPF-Ih-rdF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.3411764706" green="0.23529411759999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JK8-0G-1gC" kind="relationship" relationship="rootViewController" id="qtG-Ol-cYb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qIs-wV-sIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2560.8695652173915" y="291.84782608695656"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="folded-paper_318-311121x" width="30" height="30"/>
+        <image name="note-xxl1x" width="30" height="30"/>
+        <image name="note1x" width="30" height="30"/>
+    </resources>
+</document>

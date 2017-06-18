@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14E7f" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Nota" representedClassName="Nota" syncable="YES">
+        <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nome" attributeType="String" syncable="YES"/>
+        <relationship name="posicaoPadrao" maxCount="1" deletionRule="Nullify" destinationEntity="Posicao" inverseName="notaPadrao" inverseEntity="Posicao" syncable="YES"/>
+        <relationship name="posicoes" toMany="YES" deletionRule="Nullify" destinationEntity="Posicao" inverseName="nota" inverseEntity="Posicao" syncable="YES"/>
+    </entity>
+    <entity name="Posicao" representedClassName="Posicao" syncable="YES">
+        <attribute name="p1" attributeType="String" syncable="YES"/>
+        <attribute name="p2" attributeType="String" syncable="YES"/>
+        <attribute name="p3" attributeType="String" syncable="YES"/>
+        <attribute name="p4" attributeType="String" syncable="YES"/>
+        <attribute name="p5" attributeType="String" syncable="YES"/>
+        <attribute name="p6" attributeType="String" syncable="YES"/>
+        <relationship name="nota" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Nota" inverseName="posicoes" inverseEntity="Nota" syncable="YES"/>
+        <relationship name="notaPadrao" maxCount="1" deletionRule="Nullify" destinationEntity="Nota" inverseName="posicaoPadrao" inverseEntity="Nota" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Nota" positionX="-450" positionY="32" width="128" height="103"/>
+        <element name="Posicao" positionX="-234" positionY="-28" width="128" height="163"/>
+    </elements>
+</model>

@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC29FDC11E64D19E008FFACB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29FDC01E64D19E008FFACB /* AppDelegate.swift */; };
+		AC29FDC31E64D19E008FFACB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29FDC21E64D19E008FFACB /* ViewController.swift */; };
+		AC29FDC61E64D19E008FFACB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC29FDC41E64D19E008FFACB /* Main.storyboard */; };
+		AC29FDC81E64D19E008FFACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC29FDC71E64D19E008FFACB /* Assets.xcassets */; };
+		AC29FDCB1E64D19E008FFACB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC29FDC91E64D19E008FFACB /* LaunchScreen.storyboard */; };
+		AC29FDD61E64D19E008FFACB /* ChordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29FDD51E64D19E008FFACB /* ChordsTests.swift */; };
+		AC29FDE41E64D1D9008FFACB /* Chords.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC29FDE31E64D1D9008FFACB /* Chords.swift */; };
+		AC53852B1EF6E832003FFAC3 /* Nota+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5385241EF6E832003FFAC3 /* Nota+CoreDataClass.m */; };
+		AC53852C1EF6E832003FFAC3 /* Nota+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5385261EF6E832003FFAC3 /* Nota+CoreDataProperties.m */; };
+		AC53852D1EF6E832003FFAC3 /* Posicao+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5385281EF6E832003FFAC3 /* Posicao+CoreDataClass.m */; };
+		AC53852E1EF6E832003FFAC3 /* Posicao+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AC53852A1EF6E832003FFAC3 /* Posicao+CoreDataProperties.m */; };
+		AC6030261E6C8DDC005BA0DB /* ChordsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6030251E6C8DDC005BA0DB /* ChordsExtension.swift */; };
+		AC9053D41ED22013006A29D6 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9053D31ED22013006A29D6 /* TextViewController.swift */; };
+		AC9053D61ED22BB6006A29D6 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9053D51ED22BB6006A29D6 /* NoteViewController.swift */; };
+		AC9053D91ED24A99006A29D6 /* IdentifiedChordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9053D81ED24A99006A29D6 /* IdentifiedChordsViewController.swift */; };
+		AC9053DC1ED24BF8006A29D6 /* IdentifiedChordsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9053DB1ED24BF8006A29D6 /* IdentifiedChordsCollectionViewCell.swift */; };
+		AC9053DE1ED24E9A006A29D6 /* IdentifiedChordsNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9053DD1ED24E9A006A29D6 /* IdentifiedChordsNavigationViewController.swift */; };
+		AC9053E01ED25988006A29D6 /* ViewNote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9053DF1ED25988006A29D6 /* ViewNote.storyboard */; };
+		ACC36A2A1EB7E403005BDDAA /* ViewNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC36A291EB7E403005BDDAA /* ViewNote.swift */; };
+		ACC36A2C1EB7E40E005BDDAA /* ViewNote.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC36A2B1EB7E40E005BDDAA /* ViewNote.xib */; };
+		ACD3D7CA1EBFAB2F00823E7B /* CifrandoChords.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = ACD3D7C91EBFAB2F00823E7B /* CifrandoChords.xcdatamodel */; };
+		ACD3D7CC1EBFAB3900823E7B /* CifrandoChords.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = ACD3D7CB1EBFAB3900823E7B /* CifrandoChords.sqlite */; };
+		ACD3D8121EBFAEDC00823E7B /* DatabaseNotes.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD3D8111EBFAEDC00823E7B /* DatabaseNotes.m */; };
+		ACD3D8141EBFAF1B00823E7B /* ChordsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3D8131EBFAF1B00823E7B /* ChordsController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC29FDD21E64D19E008FFACB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC29FDB51E64D19E008FFACB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC29FDBC1E64D19E008FFACB;
+			remoteInfo = Chords;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC29FDBD1E64D19E008FFACB /* Chords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chords.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC29FDC01E64D19E008FFACB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC29FDC21E64D19E008FFACB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC29FDC51E64D19E008FFACB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC29FDC71E64D19E008FFACB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC29FDCA1E64D19E008FFACB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC29FDCC1E64D19E008FFACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC29FDD11E64D19E008FFACB /* ChordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC29FDD51E64D19E008FFACB /* ChordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordsTests.swift; sourceTree = "<group>"; };
+		AC29FDD71E64D19E008FFACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC29FDE31E64D1D9008FFACB /* Chords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chords.swift; sourceTree = "<group>"; };
+		AC5385231EF6E832003FFAC3 /* Nota+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Nota+CoreDataClass.h"; sourceTree = "<group>"; };
+		AC5385241EF6E832003FFAC3 /* Nota+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Nota+CoreDataClass.m"; sourceTree = "<group>"; };
+		AC5385251EF6E832003FFAC3 /* Nota+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Nota+CoreDataProperties.h"; sourceTree = "<group>"; };
+		AC5385261EF6E832003FFAC3 /* Nota+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Nota+CoreDataProperties.m"; sourceTree = "<group>"; };
+		AC5385271EF6E832003FFAC3 /* Posicao+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Posicao+CoreDataClass.h"; sourceTree = "<group>"; };
+		AC5385281EF6E832003FFAC3 /* Posicao+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Posicao+CoreDataClass.m"; sourceTree = "<group>"; };
+		AC5385291EF6E832003FFAC3 /* Posicao+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Posicao+CoreDataProperties.h"; sourceTree = "<group>"; };
+		AC53852A1EF6E832003FFAC3 /* Posicao+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Posicao+CoreDataProperties.m"; sourceTree = "<group>"; };
+		AC6030251E6C8DDC005BA0DB /* ChordsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordsExtension.swift; sourceTree = "<group>"; };
+		AC9053D31ED22013006A29D6 /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		AC9053D51ED22BB6006A29D6 /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		AC9053D81ED24A99006A29D6 /* IdentifiedChordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifiedChordsViewController.swift; sourceTree = "<group>"; };
+		AC9053DB1ED24BF8006A29D6 /* IdentifiedChordsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifiedChordsCollectionViewCell.swift; sourceTree = "<group>"; };
+		AC9053DD1ED24E9A006A29D6 /* IdentifiedChordsNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifiedChordsNavigationViewController.swift; sourceTree = "<group>"; };
+		AC9053DF1ED25988006A29D6 /* ViewNote.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewNote.storyboard; sourceTree = "<group>"; };
+		ACC36A291EB7E403005BDDAA /* ViewNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewNote.swift; sourceTree = "<group>"; };
+		ACC36A2B1EB7E40E005BDDAA /* ViewNote.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewNote.xib; sourceTree = "<group>"; };
+		ACD3D7C91EBFAB2F00823E7B /* CifrandoChords.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CifrandoChords.xcdatamodel; sourceTree = "<group>"; };
+		ACD3D7CB1EBFAB3900823E7B /* CifrandoChords.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = CifrandoChords.sqlite; sourceTree = "<group>"; };
+		ACD3D7CD1EBFAC6F00823E7B /* Chords-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chords-Bridging-Header.h"; sourceTree = "<group>"; };
+		ACD3D8101EBFAEDC00823E7B /* DatabaseNotes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseNotes.h; sourceTree = "<group>"; };
+		ACD3D8111EBFAEDC00823E7B /* DatabaseNotes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseNotes.m; sourceTree = "<group>"; };
+		ACD3D8131EBFAF1B00823E7B /* ChordsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordsController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC29FDBA1E64D19E008FFACB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC29FDCE1E64D19E008FFACB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC29FDB41E64D19E008FFACB = {
+			isa = PBXGroup;
+			children = (
+				AC29FDBF1E64D19E008FFACB /* Chords */,
+				AC29FDD41E64D19E008FFACB /* ChordsTests */,
+				AC29FDBE1E64D19E008FFACB /* Products */,
+				ACD3D7CD1EBFAC6F00823E7B /* Chords-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		AC29FDBE1E64D19E008FFACB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC29FDBD1E64D19E008FFACB /* Chords.app */,
+				AC29FDD11E64D19E008FFACB /* ChordsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC29FDBF1E64D19E008FFACB /* Chords */ = {
+			isa = PBXGroup;
+			children = (
+				AC29FDC01E64D19E008FFACB /* AppDelegate.swift */,
+				AC9053D71ED22BC1006A29D6 /* View Controllers */,
+				AC9053DA1ED24BE3006A29D6 /* Cell */,
+				ACD3D8131EBFAF1B00823E7B /* ChordsController.swift */,
+				ACC36A291EB7E403005BDDAA /* ViewNote.swift */,
+				AC29FDC41E64D19E008FFACB /* Main.storyboard */,
+				AC29FDE31E64D1D9008FFACB /* Chords.swift */,
+				AC6030251E6C8DDC005BA0DB /* ChordsExtension.swift */,
+				ACC36A2B1EB7E40E005BDDAA /* ViewNote.xib */,
+				AC29FDC71E64D19E008FFACB /* Assets.xcassets */,
+				AC29FDC91E64D19E008FFACB /* LaunchScreen.storyboard */,
+				AC29FDCC1E64D19E008FFACB /* Info.plist */,
+				AC9053DF1ED25988006A29D6 /* ViewNote.storyboard */,
+				ACD3D7DA1EBFAC8200823E7B /* Draw Chords Database */,
+			);
+			path = Chords;
+			sourceTree = "<group>";
+		};
+		AC29FDD41E64D19E008FFACB /* ChordsTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC29FDD51E64D19E008FFACB /* ChordsTests.swift */,
+				AC29FDD71E64D19E008FFACB /* Info.plist */,
+			);
+			path = ChordsTests;
+			sourceTree = "<group>";
+		};
+		AC9053D71ED22BC1006A29D6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC29FDC21E64D19E008FFACB /* ViewController.swift */,
+				AC9053D31ED22013006A29D6 /* TextViewController.swift */,
+				AC9053D51ED22BB6006A29D6 /* NoteViewController.swift */,
+				AC9053D81ED24A99006A29D6 /* IdentifiedChordsViewController.swift */,
+				AC9053DD1ED24E9A006A29D6 /* IdentifiedChordsNavigationViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AC9053DA1ED24BE3006A29D6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AC9053DB1ED24BF8006A29D6 /* IdentifiedChordsCollectionViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		ACD3D7DA1EBFAC8200823E7B /* Draw Chords Database */ = {
+			isa = PBXGroup;
+			children = (
+				ACD3D8101EBFAEDC00823E7B /* DatabaseNotes.h */,
+				ACD3D8111EBFAEDC00823E7B /* DatabaseNotes.m */,
+				ACD3D7C91EBFAB2F00823E7B /* CifrandoChords.xcdatamodel */,
+				ACD3D7CB1EBFAB3900823E7B /* CifrandoChords.sqlite */,
+				AC5385231EF6E832003FFAC3 /* Nota+CoreDataClass.h */,
+				AC5385241EF6E832003FFAC3 /* Nota+CoreDataClass.m */,
+				AC5385251EF6E832003FFAC3 /* Nota+CoreDataProperties.h */,
+				AC5385261EF6E832003FFAC3 /* Nota+CoreDataProperties.m */,
+				AC5385271EF6E832003FFAC3 /* Posicao+CoreDataClass.h */,
+				AC5385281EF6E832003FFAC3 /* Posicao+CoreDataClass.m */,
+				AC5385291EF6E832003FFAC3 /* Posicao+CoreDataProperties.h */,
+				AC53852A1EF6E832003FFAC3 /* Posicao+CoreDataProperties.m */,
+			);
+			name = "Draw Chords Database";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC29FDBC1E64D19E008FFACB /* Chords */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC29FDDA1E64D19E008FFACB /* Build configuration list for PBXNativeTarget "Chords" */;
+			buildPhases = (
+				AC29FDB91E64D19E008FFACB /* Sources */,
+				AC29FDBA1E64D19E008FFACB /* Frameworks */,
+				AC29FDBB1E64D19E008FFACB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chords;
+			productName = Chords;
+			productReference = AC29FDBD1E64D19E008FFACB /* Chords.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC29FDD01E64D19E008FFACB /* ChordsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC29FDDD1E64D19E008FFACB /* Build configuration list for PBXNativeTarget "ChordsTests" */;
+			buildPhases = (
+				AC29FDCD1E64D19E008FFACB /* Sources */,
+				AC29FDCE1E64D19E008FFACB /* Frameworks */,
+				AC29FDCF1E64D19E008FFACB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC29FDD31E64D19E008FFACB /* PBXTargetDependency */,
+			);
+			name = ChordsTests;
+			productName = ChordsTests;
+			productReference = AC29FDD11E64D19E008FFACB /* ChordsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC29FDB51E64D19E008FFACB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Rodrigo Soldi Lopes";
+				TargetAttributes = {
+					AC29FDBC1E64D19E008FFACB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2JGEPG62QN;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					AC29FDD01E64D19E008FFACB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2JGEPG62QN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AC29FDBC1E64D19E008FFACB;
+					};
+				};
+			};
+			buildConfigurationList = AC29FDB81E64D19E008FFACB /* Build configuration list for PBXProject "Chords" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC29FDB41E64D19E008FFACB;
+			productRefGroup = AC29FDBE1E64D19E008FFACB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC29FDBC1E64D19E008FFACB /* Chords */,
+				AC29FDD01E64D19E008FFACB /* ChordsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC29FDBB1E64D19E008FFACB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC29FDCB1E64D19E008FFACB /* LaunchScreen.storyboard in Resources */,
+				AC29FDC81E64D19E008FFACB /* Assets.xcassets in Resources */,
+				ACD3D7CC1EBFAB3900823E7B /* CifrandoChords.sqlite in Resources */,
+				AC9053E01ED25988006A29D6 /* ViewNote.storyboard in Resources */,
+				ACC36A2C1EB7E40E005BDDAA /* ViewNote.xib in Resources */,
+				AC29FDC61E64D19E008FFACB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC29FDCF1E64D19E008FFACB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC29FDB91E64D19E008FFACB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC53852D1EF6E832003FFAC3 /* Posicao+CoreDataClass.m in Sources */,
+				AC9053D61ED22BB6006A29D6 /* NoteViewController.swift in Sources */,
+				ACD3D8141EBFAF1B00823E7B /* ChordsController.swift in Sources */,
+				AC9053DC1ED24BF8006A29D6 /* IdentifiedChordsCollectionViewCell.swift in Sources */,
+				ACC36A2A1EB7E403005BDDAA /* ViewNote.swift in Sources */,
+				ACD3D8121EBFAEDC00823E7B /* DatabaseNotes.m in Sources */,
+				AC53852C1EF6E832003FFAC3 /* Nota+CoreDataProperties.m in Sources */,
+				AC53852E1EF6E832003FFAC3 /* Posicao+CoreDataProperties.m in Sources */,
+				AC6030261E6C8DDC005BA0DB /* ChordsExtension.swift in Sources */,
+				AC29FDC31E64D19E008FFACB /* ViewController.swift in Sources */,
+				AC9053D91ED24A99006A29D6 /* IdentifiedChordsViewController.swift in Sources */,
+				ACD3D7CA1EBFAB2F00823E7B /* CifrandoChords.xcdatamodel in Sources */,
+				AC29FDC11E64D19E008FFACB /* AppDelegate.swift in Sources */,
+				AC53852B1EF6E832003FFAC3 /* Nota+CoreDataClass.m in Sources */,
+				AC29FDE41E64D1D9008FFACB /* Chords.swift in Sources */,
+				AC9053D41ED22013006A29D6 /* TextViewController.swift in Sources */,
+				AC9053DE1ED24E9A006A29D6 /* IdentifiedChordsNavigationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC29FDCD1E64D19E008FFACB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC29FDD61E64D19E008FFACB /* ChordsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC29FDD31E64D19E008FFACB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC29FDBC1E64D19E008FFACB /* Chords */;
+			targetProxy = AC29FDD21E64D19E008FFACB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC29FDC41E64D19E008FFACB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC29FDC51E64D19E008FFACB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC29FDC91E64D19E008FFACB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC29FDCA1E64D19E008FFACB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC29FDD81E64D19E008FFACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC29FDD91E64D19E008FFACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC29FDDB1E64D19E008FFACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 2JGEPG62QN;
+				INFOPLIST_FILE = Chords/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RodrigoSoldi.Chords;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chords-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AC29FDDC1E64D19E008FFACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 2JGEPG62QN;
+				INFOPLIST_FILE = Chords/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RodrigoSoldi.Chords;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chords-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AC29FDDE1E64D19E008FFACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2JGEPG62QN;
+				INFOPLIST_FILE = ChordsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RodrigoSoldi.ChordsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chords.app/Chords";
+			};
+			name = Debug;
+		};
+		AC29FDDF1E64D19E008FFACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2JGEPG62QN;
+				INFOPLIST_FILE = ChordsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RodrigoSoldi.ChordsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chords.app/Chords";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC29FDB81E64D19E008FFACB /* Build configuration list for PBXProject "Chords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC29FDD81E64D19E008FFACB /* Debug */,
+				AC29FDD91E64D19E008FFACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC29FDDA1E64D19E008FFACB /* Build configuration list for PBXNativeTarget "Chords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC29FDDB1E64D19E008FFACB /* Debug */,
+				AC29FDDC1E64D19E008FFACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC29FDDD1E64D19E008FFACB /* Build configuration list for PBXNativeTarget "ChordsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC29FDDE1E64D19E008FFACB /* Debug */,
+				AC29FDDF1E64D19E008FFACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC29FDB51E64D19E008FFACB /* Project object */;
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="HQq-87-KI4">
+            <objects>
+                <viewController id="Upi-mz-6XW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bay-Fs-IQ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="gpt-xb-69Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="agy-7W-RtA">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FgE-U8-mQb" customClass="ViewNote" customModule="Chords" customModuleProvider="target">
+                                <rect key="frame" x="256" y="341.5" width="512" height="683"/>
+                                <color key="backgroundColor" red="0.3411764706" green="0.23529411759999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FgE-U8-mQb" firstAttribute="centerY" secondItem="agy-7W-RtA" secondAttribute="centerY" id="HZl-vq-UpQ"/>
+                            <constraint firstItem="FgE-U8-mQb" firstAttribute="width" secondItem="agy-7W-RtA" secondAttribute="width" multiplier="1/2" id="U5w-8H-Nac"/>
+                            <constraint firstItem="FgE-U8-mQb" firstAttribute="centerX" secondItem="agy-7W-RtA" secondAttribute="centerX" id="X8S-13-0wy"/>
+                            <constraint firstItem="FgE-U8-mQb" firstAttribute="height" secondItem="agy-7W-RtA" secondAttribute="height" multiplier="1/2" id="wJu-cM-pv1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qf4-Rt-Up1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263" y="-27"/>
+        </scene>
+    </scenes>
+</document>
